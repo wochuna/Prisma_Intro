@@ -11,7 +11,7 @@ async function main() {
     },
   });*/
   
-  const user2 = await prisma.user.create({
+  /*const user2 = await prisma.user.create({
     data: {
       name: 'Mark',
       email: 'markkemboi@gmail.com', 
@@ -23,7 +23,15 @@ async function main() {
       name: 'Feo',
       email: 'feokerich@gmail.com', 
     },
-  });
+  });*/
+
+   const user4 = await prisma.user.create({
+      data: {
+         name: 'Chier',
+         email:'chierchebii@gmail.com',
+      }'
+   });
+      
 
   // Insert a new study record with associated residence
   /*const study1 = await prisma.studies.create({
@@ -39,7 +47,7 @@ async function main() {
       },
     },
   });*/
-  const study2 = await prisma.studies.create({
+  /*const study2 = await prisma.studies.create({
     data: {
       program: 'Law',
       year: 2,
@@ -65,9 +73,24 @@ async function main() {
         },
       },
     },
-  });
+  });*/
 
-  console.log({user2, study2, user3, study3 });
+
+   const study4 = await prisma.studies.create({
+    data: {
+      program: 'BBIT',
+      year: 1,
+      sem: '2',
+      residence: {
+        create: {
+          house: 'Twiga',
+          period: '2023-2026',
+        },
+      },
+    },
+  });*/
+
+  console.log({user4, study4});
 }
 
 main()
