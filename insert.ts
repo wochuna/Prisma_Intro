@@ -29,7 +29,7 @@ async function main() {
       data: {
          name: 'Chier',
          email:'chierchebii@gmail.com',
-      }'
+      },
    });
       
 
@@ -88,7 +88,7 @@ async function main() {
         },
       },
     },
-  });*/
+  });
 
   console.log({user4, study4});
 }
