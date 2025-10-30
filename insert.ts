@@ -25,10 +25,10 @@ async function main() {
     },
   });*/
 
-   const user4 = await prisma.user.create({
+   const user5 = await prisma.user.create({
       data: {
-         name: 'Chier',
-         email:'chierchebii@gmail.com',
+         name: 'Marc',
+         email:'duomarc@gmail.com',
       },
    });
       
@@ -76,21 +76,21 @@ async function main() {
   });*/
 
 
-   const study4 = await prisma.studies.create({
+   const study5 = await prisma.studies.create({
     data: {
-      program: 'BBIT',
-      year: 1,
+      program: 'LAW',
+      year: 4,
       sem: '2',
       residence: {
         create: {
-          house: 'Twiga',
-          period: '2023-2026',
+          house: 'Ndovu',
+          period: '2019-2020',
         },
       },
     },
   });
 
-  console.log({user4, study4});
+  console.log({user5, study5});
 }
 
 main()
